@@ -1,0 +1,7 @@
+ipython==7.31.1
+matplotlib==3.7.1
+numpy==1.24.3
+Pillow==10.2.0
+torch==2.2.1
+torchvision==0.17.1
+tqdm==4.64.1

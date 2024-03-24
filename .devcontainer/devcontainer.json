@@ -1,0 +1,29 @@
+{
+    "name": "diffusion_models_basics",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "GitHub.copilot",
+        "ms-python.black-formatter",
+        "yatki.vscode-surround",
+        "GitHub.copilot-chat",
+        "ms-toolsai.jupyter",
+        "GitHub.copilot-labs",
+        "GitHub.vscode-github-actions",
+        "ms-azuretools.vscode-docker",
+        "Codeium.codeium",
+
+
+    ],
+    "workspaceFolder": "/code",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/code,type=bind,consistency=cached",
+    "runArgs": [
+        "--ipc=host",
+        "--gpus", "all",
+        "--env-file=.devcontainer/.env"
+    ],
+}
