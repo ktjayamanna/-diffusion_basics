@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from diffusion_utilities import *
 from model import ContextUnet
+from dataset import CustomDataset
 
 # diffusion hyperparameters
 timesteps = 500
